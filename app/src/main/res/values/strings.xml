@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">40 Hadees in Urdu - English</string>
+    <string name="day_dua_list_page">Dua List Page</string>
+    <string name="page_direction_screen">PageDirectionScreen</string>
+    <string name="dua_read_page">Dua Read Page</string>
+</resources>

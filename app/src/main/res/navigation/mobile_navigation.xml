@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dua_list">
+
+    <fragment
+        android:id="@+id/navigation_dua_list"
+        android:name="muhammad.fourty.saying.listingdua.MainDuaListFragment"
+        android:label="@string/day_dua_list_page"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/move_to_scroll_direction"
+            app:destination="@id/page_scroll_direction" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/page_scroll_direction"
+        android:name="com.bottomenu.islamicbook.ui.notificationsdua.SelectPageScrollDirectionFragment"
+        android:label="@string/page_direction_screen"
+        tools:layout="@layout/fragment_scroll_direction" >
+        <action
+            android:id="@+id/move_to_dua_read_page"
+            app:destination="@id/dua_read_page" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/dua_read_page"
+        android:name="muhammad.fourty.saying.detaildua.DuaDetailFragment"
+        android:label="@string/dua_read_page"
+        tools:layout="@layout/fragment_dashboard" >
+
+        <action
+            android:id="@+id/move_to_scroll_direction"
+            app:destination="@id/page_scroll_direction" />
+    </fragment>
+</navigation>
