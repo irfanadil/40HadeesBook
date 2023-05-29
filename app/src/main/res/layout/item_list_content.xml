@@ -13,11 +13,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:fontFamily="@font/mehr_urdu"
+
         android:gravity="start"
         android:text="AuthorName"
         android:textColor="@color/black"
         android:textDirection="anyRtl"
+        android:fontFamily="@font/mehr_urdu"
         android:textSize="29sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

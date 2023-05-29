@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_dua_list"
-        android:name="muhammad.fourty.saying.listingdua.MainDuaListFragment"
+        android:name="muhammad.fourty.saying.listinghadees.HadeesListFragment"
         android:label="@string/day_dua_list_page"
         tools:layout="@layout/fragment_home" >
 
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/page_scroll_direction"
-        android:name="com.bottomenu.islamicbook.ui.notificationsdua.SelectPageScrollDirectionFragment"
+        android:name="muhammad.fourty.saying.notificationsdua.SelectPageScrollDirectionFragment"
         android:label="@string/page_direction_screen"
         tools:layout="@layout/fragment_scroll_direction" >
         <action
@@ -32,7 +32,7 @@
 
     <fragment
         android:id="@+id/dua_read_page"
-        android:name="muhammad.fourty.saying.detaildua.DuaDetailFragment"
+        android:name="muhammad.fourty.saying.detailhadees.HadeesDetailFragment"
         android:label="@string/dua_read_page"
         tools:layout="@layout/fragment_dashboard" >
 
