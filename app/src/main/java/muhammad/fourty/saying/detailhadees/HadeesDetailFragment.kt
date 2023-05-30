@@ -17,7 +17,9 @@ class HadeesDetailFragment : Fragment() {
     private val listOfSaying = arrayListOf(
         Saying.first, Saying.second , Saying.third,
         Saying.forth, Saying.fifth, Saying.sixth, Saying.seventh, Saying.eight, Saying.nine,
-        Saying.tenth, Saying.eleventh, Saying.twelve, Saying.thirteen, Saying.fourteen)
+        Saying.tenth, Saying.eleventh, Saying.twelve, Saying.thirteen, Saying.fourteen,
+        Saying.fifteen, Saying.sixteen, Saying.seventeen, Saying.eighteen, Saying.nineteen, Saying.twenty,
+        Saying.twentyOne, Saying.twentyTwo, Saying.twentyThree)
 
 
     private var _binding: FragmentDashboardBinding? = null
