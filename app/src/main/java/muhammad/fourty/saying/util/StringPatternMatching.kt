@@ -15,6 +15,7 @@ object StringPatternMatching {
         val pattern3 = "محمد صلى الله عليه وسلم"
         val pattern4 = "صلى الله عليه وسلم"
         val pattern5 = "حضوراکرم ﷺ"
+        val pattern6 = "رسول اکرم ﷺ"
 
 
         val nameList:MutableList<Int> = mutableListOf()
@@ -23,6 +24,7 @@ object StringPatternMatching {
         nameList.addAll(returnMatchingIndexes(pattern3, prophetSaying))
         nameList.addAll(returnMatchingIndexes(pattern4, prophetSaying))
         nameList.addAll(returnMatchingIndexes(pattern5, prophetSaying))
+        nameList.addAll(returnMatchingIndexes(pattern6, prophetSaying))
         return highLightProphetName(wordToSpan, nameList)
 
     }

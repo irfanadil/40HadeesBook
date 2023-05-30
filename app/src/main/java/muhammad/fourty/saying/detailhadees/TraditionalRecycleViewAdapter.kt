@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import muhammad.fourty.saying.databinding.ImagesHolderBinding
+import muhammad.fourty.saying.databinding.HadeesDetailHolderBinding
 import muhammad.fourty.saying.util.StringPatternMatching
 
 
@@ -18,12 +18,12 @@ class TraditionalRecycleViewAdapter  : RecyclerView.Adapter<TraditionalRecycleVi
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding =
-            ImagesHolderBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            HadeesDetailHolderBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
      // The ViewHolder class holds the view
-    class ViewHolder(binding: ImagesHolderBinding) :RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(binding: HadeesDetailHolderBinding) :RecyclerView.ViewHolder(binding.root) {
         var sayingTextView: TextView = binding.sayingTextView
     }
 
