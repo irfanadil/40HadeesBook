@@ -1,18 +1,15 @@
 package muhammad.fourty.saying.notificationsdua
 
-import android.graphics.Color
 import android.os.Bundle
-import android.text.Spannable
-import android.text.SpannableString
-import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.navigation.fragment.findNavController
 import muhammad.fourty.saying.R
-import muhammad.fourty.saying.StringPatternMatching
+import muhammad.fourty.saying.util.StringPatternMatching
 import muhammad.fourty.saying.databinding.FragmentScrollDirectionBinding
 
 
@@ -46,39 +43,29 @@ class SelectPageScrollDirectionFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-       // val notificationsViewModel = ViewModelProvider(this).get(NotificationsViewModel::class.java)
-
-
 
         _binding = FragmentScrollDirectionBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        arguments?.getInt("stageIndex")?.let {
+            //findNavController().navigate(R.id.move_to_dua_read_page , bundleOf("stageIndex" to it , "scrollType" to 1))
+        }
+
         binding.horizontalBtn.setOnClickListener{
             arguments?.getInt("stageIndex")?.let {
                 findNavController().navigate(R.id.move_to_dua_read_page , bundleOf("stageIndex" to it , "scrollType" to 0))
             }
         }
 
-        binding.verticalBtn.setOnClickListener{
+        binding.verticalBtn.setOnClickListener {
             arguments?.getInt("stageIndex")?.let {
-                findNavController().navigate(R.id.move_to_dua_read_page , bundleOf("stageIndex" to it , "scrollType" to 1))
+                findNavController().navigate(
+                    R.id.move_to_dua_read_page,
+                    bundleOf("stageIndex" to it, "scrollType" to 1)
+                )
             }
         }
 
-
-
-
-        /*
-        val str  = "محمد صلى الله عليه وسلم" //currentItem.duaTitle //  "پہلی منزل  محمد ﷺ"
-        val wordToSpan: Spannable = SpannableString(str)
-        wordToSpan.setSpan(
-            ForegroundColorSpan(Color.GREEN),
-            0,
-            str.length,
-            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-        )
-         */
-
-        binding.textView.text = StringPatternMatching.returnAllMatchingNameOfProphet(firstString)
+       binding.sayingTextView.text = StringPatternMatching.returnAllMatchingNameOfProphet(firstString)
 
         return root
     }

@@ -3,7 +3,7 @@ package muhammad.fourty.saying.detailhadees
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import muhammad.fourty.saying.databinding.ImagesHolderBinding
 
@@ -23,7 +23,7 @@ class TraditionalRecycleViewAdapter  : RecyclerView.Adapter<TraditionalRecycleVi
 
      // The ViewHolder class holds the view
     class ViewHolder(binding: ImagesHolderBinding) :RecyclerView.ViewHolder(binding.root) {
-        var imageHolder: ImageView = binding.images
+        var sayingTextView: TextView = binding.sayingTextView
     }
 
 
@@ -41,7 +41,7 @@ class TraditionalRecycleViewAdapter  : RecyclerView.Adapter<TraditionalRecycleVi
     // This method binds the screen with the view
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
 
-        val image = passedList[position]
+        val textGiven = passedList[position]
         //val viewWidthToBitmapWidthRatio = image.getWidth() as Double / bitmap.getWidth() as Double
        // image.getLayoutParams().height = (bitmap.getHeight() * viewWidthToBitmapWidthRatio)
 
@@ -54,16 +54,16 @@ class TraditionalRecycleViewAdapter  : RecyclerView.Adapter<TraditionalRecycleVi
          //   viewHolder.imageHolder.scaleType = ImageView.ScaleType.FIT_XY
         //else
         //viewHolder.imageHolder.scaleType = ImageView.ScaleType.FIT_XY
-        viewHolder.imageHolder.setImageResource(image)
+        viewHolder.sayingTextView.text = (textGiven)
     }
 
 
 
-    private var passedList:IntArray = intArrayOf()
+    private var passedList:ArrayList<String> = arrayListOf()
     private var scrollType:Int  = 0
 
     @SuppressLint("NotifyDataSetChanged")
-    fun updateInsideAdapter(itemList: IntArray , typeScroll:Int){
+    fun updateInsideAdapter(itemList: ArrayList<String> , typeScroll:Int){
         this.passedList = itemList
         this.scrollType = typeScroll
         notifyDataSetChanged()

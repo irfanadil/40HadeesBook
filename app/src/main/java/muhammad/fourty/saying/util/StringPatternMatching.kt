@@ -1,4 +1,4 @@
-package muhammad.fourty.saying
+package muhammad.fourty.saying.util
 
 import android.graphics.Color
 import android.text.Spannable

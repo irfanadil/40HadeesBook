@@ -6,43 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.PagerSnapHelper
-import muhammad.fourty.saying.R
 import muhammad.fourty.saying.databinding.FragmentDashboardBinding
+import muhammad.fourty.saying.util.Saying
 
 
 class HadeesDetailFragment : Fragment() {
 
 
-    val firstStage = intArrayOf(
-        R.mipmap.img1_1,
-    )
 
-    val secondStage  = intArrayOf(
-        R.mipmap.img2_1,
-    )
-
-    val thirdStage = intArrayOf(
-        R.mipmap.img3_1,
-    )
-
-    val forthStage= intArrayOf(
-        R.mipmap.img4_1,
-    )
-
-    val fifthStage= intArrayOf(
-        R.mipmap.img5_1,
-    )
-
-    val sixthStage= intArrayOf(
-        R.mipmap.img6_1,
-    )
-
-    val seventhStage= intArrayOf(
-        R.mipmap.img7_1,
-    )
-
-    private val listStages = arrayListOf(firstStage, secondStage,thirdStage, forthStage, fifthStage, sixthStage, seventhStage)
+    private val listOfSaying = arrayListOf(
+        Saying.first, Saying.second , Saying.third,
+        Saying.forth, Saying.fifth, Saying.sixth, Saying.seventh, Saying.eight, Saying.nine,
+        Saying.tenth, Saying.eleventh, Saying.twelve, Saying.thirteen, Saying.fourteen)
 
 
     private var _binding: FragmentDashboardBinding? = null
@@ -67,27 +42,13 @@ class HadeesDetailFragment : Fragment() {
         arguments?.getInt("stageIndex")?.let {indexForwarded->
             arguments?.getInt("scrollType")?.let { scrollDirection ->
                 if(scrollDirection ==  0)
-                    loadHorizontalSetup(indexForwarded)
+                    loadVerticalSetup()
                 else
                     loadVerticalSetup()
             }
         }
     }
 
-
-    private fun loadHorizontalSetup(indexForwarded:Int){
-
-        val recycleViewAdapter = ZoomInOutRecycleViewAdapter()
-        binding.imagerRecycleView.apply {
-            setHasFixedSize(true)
-            //isNestedScrollingEnabled = true
-            adapter = recycleViewAdapter
-            layoutManager = LinearLayoutManager(requireContext() , LinearLayoutManager.HORIZONTAL, true)
-            PagerSnapHelper().attachToRecyclerView(this)
-        }
-
-        recycleViewAdapter.updateZoomAdapter(listStages[indexForwarded]  )
-    }
 
 
     private fun loadVerticalSetup(){
@@ -98,63 +59,31 @@ class HadeesDetailFragment : Fragment() {
             adapter = traditionalRecycleViewAdapter
         }
         arguments?.getInt("stageIndex")?.let {
-            traditionalRecycleViewAdapter.updateInsideAdapter(listStages[it] , 1)
+            traditionalRecycleViewAdapter.updateInsideAdapter(listOfSaying , 1)
+            binding.imagerRecycleView.layoutManager?.scrollToPosition(it)
         }
 
     }
-
-
-
-    /*
-    private fun setupViewPager(){
-
-        // Object of ViewPager2Adapter
-        // this will passes the
-        // context to the constructor
-        // of ViewPager2Adapter
-
-        // Object of ViewPager2Adapter
-        // this will passes the
-        // context to the constructor
-        // of ViewPager2Adapter
-        val viewPager2Adapter = ViewPager2Adapter()
-
-        // adding the adapter to viewPager2
-        // to show the views in recyclerview
-
-        // adding the adapter to viewPager2
-        // to show the views in recyclerview
-        binding.viewpager.adapter = viewPager2Adapter
-
-        // To get swipe event of viewpager2
-
-        // To get swipe event of viewpager2
-        binding.viewpager.registerOnPageChangeCallback(object : OnPageChangeCallback() {
-            // This method is triggered when there is any scrolling activity for the current page
-            override fun onPageScrolled(
-                position: Int,
-                positionOffset: Float,
-                positionOffsetPixels: Int
-            ) {
-                super.onPageScrolled(position, positionOffset, positionOffsetPixels)
-            }
-
-            // triggered when you select a new page
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-            }
-
-            // triggered when there is
-            // scroll state will be changed
-            override fun onPageScrollStateChanged(state: Int) {
-                super.onPageScrollStateChanged(state)
-            }
-        })
-    }
-    */
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 }
+
+
+/*
+private fun loadHorizontalSetup(indexForwarded:Int){
+
+    val recycleViewAdapter = ZoomInOutRecycleViewAdapter()
+    binding.imagerRecycleView.apply {
+        setHasFixedSize(true)
+        //isNestedScrollingEnabled = true
+        adapter = recycleViewAdapter
+        layoutManager = LinearLayoutManager(requireContext() , LinearLayoutManager.HORIZONTAL, true)
+        PagerSnapHelper().attachToRecyclerView(this)
+    }
+
+    recycleViewAdapter.updateZoomAdapter(listStages[indexForwarded]  )
+}
+ */
