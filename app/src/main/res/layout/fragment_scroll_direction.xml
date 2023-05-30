@@ -39,27 +39,44 @@
         android:id="@+id/vertical_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="16dp"
         android:text="VERTICAL SCROLL OF PAGES"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/horizontal_btn"
         app:layout_constraintStart_toStartOf="@+id/horizontal_btn"
         app:layout_constraintTop_toBottomOf="@+id/horizontal_btn" />
 
-    <TextView
-        android:id="@+id/textView"
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="TextView"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
         android:scrollbars="vertical"
-        android:textColor="@color/black"
-        android:textDirection="anyRtl"
-        android:fontFamily="@font/mehr_urdu"
-        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vertical_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/vertical_btn">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/mehr_urdu"
+            android:scrollbars="vertical"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textDirection="anyRtl"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vertical_btn" />
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
