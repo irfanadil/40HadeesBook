@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import muhammad.fourty.saying.databinding.ImagesHolderBinding
+import muhammad.fourty.saying.util.StringPatternMatching
 
 
 class TraditionalRecycleViewAdapter  : RecyclerView.Adapter<TraditionalRecycleViewAdapter.ViewHolder>() {
@@ -54,7 +55,7 @@ class TraditionalRecycleViewAdapter  : RecyclerView.Adapter<TraditionalRecycleVi
          //   viewHolder.imageHolder.scaleType = ImageView.ScaleType.FIT_XY
         //else
         //viewHolder.imageHolder.scaleType = ImageView.ScaleType.FIT_XY
-        viewHolder.sayingTextView.text = (textGiven)
+        viewHolder.sayingTextView.text = StringPatternMatching.returnAllMatchingNameOfProphet(textGiven)
     }
 
 

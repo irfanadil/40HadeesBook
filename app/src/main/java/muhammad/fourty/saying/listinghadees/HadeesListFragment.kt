@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import muhammad.fourty.saying.R
 import muhammad.fourty.saying.databinding.FragmentHomeBinding
-import muhammad.fourty.saying.listinghadees.adapter.BookListAdapter
+import muhammad.fourty.saying.listinghadees.adapter.IndexListAdapter
 import muhammad.fourty.saying.listinghadees.adapter.DuaClickAdapter
-import muhammad.fourty.saying.listinghadees.model.DuaModel
+import muhammad.fourty.saying.listinghadees.model.SayingIndexModel
 
 
 class HadeesListFragment : Fragment() , DuaClickAdapter {
@@ -21,7 +21,7 @@ class HadeesListFragment : Fragment() , DuaClickAdapter {
     // This property is only valid between onCreateView and  - onDestroyView.
     private val binding get() = _binding!!
 
-    private lateinit var bookListAdapter: BookListAdapter
+    private lateinit var indexListAdapter: IndexListAdapter
 
     //private val viewModel: HomeViewModel by viewModels()
 
@@ -36,34 +36,57 @@ class HadeesListFragment : Fragment() , DuaClickAdapter {
         return root
     }
 
+
+
+
+
     private fun setupBookView(){
-        bookListAdapter = BookListAdapter(this@HadeesListFragment)
+        indexListAdapter = IndexListAdapter(this@HadeesListFragment)
         binding.indexRecyclerView.apply {
             setHasFixedSize(true)
-            adapter = bookListAdapter
+            adapter = indexListAdapter
         }
 
 
 
-        val listOfDuaModel = listOf(
-            DuaModel(0, "پہلی منزل  محمد ﷺ","Day 1"),
-            DuaModel(1,"دوسری منزل ","Day 2"),
-            DuaModel(2,"تیسری منزل ","Day 3"),
-            DuaModel(3," چوتھی منزل ","Day 4"),
-            DuaModel(4," پانچوی منزل ","Day 5"),
-            DuaModel(5,"چھٹی منزل ","Day 6"),
-            DuaModel(6,"ساتویں منزل ","Day 7")
-        )
+        val listOfSayingIndexModels = listOf(
+            SayingIndexModel(0, "اخلاص نیت ","Day 1"),
+            SayingIndexModel(1,"مسلمانوں کے چند حقوق","Day 2"),
+            SayingIndexModel(2,"رحمدلی ","Day 3"),
+            SayingIndexModel(3," چخلخوری ","Day 4"),
+            SayingIndexModel(4," قطح رحمی ","Day 5"),
+            SayingIndexModel(5,"ظلم کی مذمت ","Day 6"),
+            SayingIndexModel(6," ٹخنوں سے نیچے تک لباس پہننے پر وعید  ","Day 7"),
+            SayingIndexModel(2,"کامل مسلمان کون ؟ ","Day 8"),
+            SayingIndexModel(3,"  نرمی ومہربانی ","Day 9"),
+            SayingIndexModel(4," قطح رحمی ","Day 10"),
+            SayingIndexModel(5,"بے حیائی کے مذمت ","Day 11"),
 
-        bookListAdapter.updateInsideAdapter(listOfDuaModel)
+            SayingIndexModel(2,"پا بندی اور مستقل مزاجی ","Day 12"),
+            SayingIndexModel(3,"تصویر اور کتے کی نحوست","Day 13"),
+            SayingIndexModel(4,"  نبی ﷺ کا محبوب ","Day 14"),
+            SayingIndexModel(5,"دنیا کی حیثیت","Day 15"),
+
+            SayingIndexModel(2,"ناراضگی کی مذمت ","Day 16"),
+            SayingIndexModel(3,"  ہوشیاری اور بیدار مغزی ","Day 17"),
+            SayingIndexModel(4," حقیقی مالداری ","Day 18"),
+            SayingIndexModel(5,"دنیا میں رہنے کا طریقہ","Day 19"),
+
+            SayingIndexModel(2,"جھوٹے کی پہچان","Day 20"),
+            SayingIndexModel(3,"چچا کی عظمت","Day 21"),
+               SayingIndexModel(5,"جھوٹے کی ایک پہچان","Day 23"),
+
+            )
+
+        indexListAdapter.updateInsideAdapter(listOfSayingIndexModels)
     }
 
 
-    override fun duaItemClicked(duaTitleModel: DuaModel) {
-        findNavController().navigate(R.id.move_to_scroll_direction , bundleOf("stageIndex" to duaTitleModel.stageIndex))
+    override fun duaItemClicked(duaTitleModel: SayingIndexModel) {
+        findNavController().navigate(R.id.move_to_dua_read_page , bundleOf("stageIndex" to duaTitleModel.stageIndex))
     }
 
-    override fun deleteUrlEvent(duaTitleModel: DuaModel) {
+    override fun deleteUrlEvent(duaTitleModel: SayingIndexModel) {
 
     }
 

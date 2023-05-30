@@ -2,9 +2,9 @@ package muhammad.fourty.saying.listinghadees.model
 
 
 //@Entity(tableName = "quotesTable")
-data class DuaModel(
+data class SayingIndexModel(
     val stageIndex: Int,
-    val duaTitle: String,
+    val hadeesTitle: String,
     val duaDayCount: String,
     //val duaBenefit: String? = "some dua benefit",
     var visibleState: Boolean = true,

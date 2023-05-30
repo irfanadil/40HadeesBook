@@ -12,8 +12,9 @@
         tools:layout="@layout/fragment_home" >
 
         <action
-            android:id="@+id/move_to_scroll_direction"
-            app:destination="@id/page_scroll_direction" />
+            android:id="@+id/move_to_dua_read_page"
+            app:destination="@id/dua_read_page" />
+
     </fragment>
 
 
@@ -23,9 +24,7 @@
         android:name="muhammad.fourty.saying.notificationsdua.SelectPageScrollDirectionFragment"
         android:label="@string/page_direction_screen"
         tools:layout="@layout/fragment_scroll_direction" >
-        <action
-            android:id="@+id/move_to_dua_read_page"
-            app:destination="@id/dua_read_page" />
+
     </fragment>
 
 
@@ -35,9 +34,8 @@
         android:name="muhammad.fourty.saying.detailhadees.HadeesDetailFragment"
         android:label="@string/dua_read_page"
         tools:layout="@layout/fragment_dashboard" >
-
         <action
-            android:id="@+id/move_to_scroll_direction"
-            app:destination="@id/page_scroll_direction" />
+            android:id="@+id/action_dua_read_page_to_navigation_dua_list"
+            app:destination="@id/navigation_dua_list" />
     </fragment>
 </navigation>

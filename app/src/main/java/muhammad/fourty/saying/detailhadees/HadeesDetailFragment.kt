@@ -39,14 +39,7 @@ class HadeesDetailFragment : Fragment() {
     }
 
     private fun setupRecyclerView(){
-        arguments?.getInt("stageIndex")?.let {indexForwarded->
-            arguments?.getInt("scrollType")?.let { scrollDirection ->
-                if(scrollDirection ==  0)
-                    loadVerticalSetup()
-                else
-                    loadVerticalSetup()
-            }
-        }
+        loadVerticalSetup()
     }
 
 
@@ -62,7 +55,6 @@ class HadeesDetailFragment : Fragment() {
             traditionalRecycleViewAdapter.updateInsideAdapter(listOfSaying , 1)
             binding.imagerRecycleView.layoutManager?.scrollToPosition(it)
         }
-
     }
 
     override fun onDestroyView() {
