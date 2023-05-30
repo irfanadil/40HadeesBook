@@ -65,7 +65,7 @@ class SelectPageScrollDirectionFragment : Fragment() {
             }
         }
 
-       binding.sayingTextView.text = StringPatternMatching.returnAllMatchingNameOfProphet(firstString)
+       binding.sayingTextView.text = StringPatternMatching.returnAllMatchingNameOfProphet(firstString , requireContext())
 
         return root
     }

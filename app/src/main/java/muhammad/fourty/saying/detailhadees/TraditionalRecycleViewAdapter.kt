@@ -1,6 +1,7 @@
 package muhammad.fourty.saying.detailhadees
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
@@ -9,7 +10,7 @@ import muhammad.fourty.saying.databinding.HadeesDetailHolderBinding
 import muhammad.fourty.saying.util.StringPatternMatching
 
 
-class TraditionalRecycleViewAdapter  : RecyclerView.Adapter<TraditionalRecycleViewAdapter.ViewHolder>() {
+class TraditionalRecycleViewAdapter (val context:Context) : RecyclerView.Adapter<TraditionalRecycleViewAdapter.ViewHolder>() {
 
     // Array of images
     // Adding images from drawable folder
@@ -55,7 +56,7 @@ class TraditionalRecycleViewAdapter  : RecyclerView.Adapter<TraditionalRecycleVi
          //   viewHolder.imageHolder.scaleType = ImageView.ScaleType.FIT_XY
         //else
         //viewHolder.imageHolder.scaleType = ImageView.ScaleType.FIT_XY
-        viewHolder.sayingTextView.text = StringPatternMatching.returnAllMatchingNameOfProphet(textGiven)
+        viewHolder.sayingTextView.text = StringPatternMatching.returnAllMatchingNameOfProphet(textGiven, context )
     }
 
 

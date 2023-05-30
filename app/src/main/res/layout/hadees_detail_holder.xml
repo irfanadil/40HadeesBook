@@ -18,7 +18,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:fontFamily="@font/mehr_urdu"
+        android:fontFamily="@font/noori_nastaleeq_regular"
         android:gravity="center"
         android:text="TextView"
         android:textColor="@color/black"
