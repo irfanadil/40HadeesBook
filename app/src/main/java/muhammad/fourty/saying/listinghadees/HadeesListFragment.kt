@@ -50,31 +50,31 @@ class HadeesListFragment : Fragment() , DuaClickAdapter {
 
 
         val listOfSayingIndexModels = listOf(
-            SayingIndexModel(0, "اخلاص نیت ","Day 1"),
-            SayingIndexModel(1,"مسلمانوں کے چند حقوق","Day 2"),
-            SayingIndexModel(2,"رحمدلی ","Day 3"),
-            SayingIndexModel(3," چخلخوری ","Day 4"),
-            SayingIndexModel(4," قطح رحمی ","Day 5"),
-            SayingIndexModel(5,"ظلم کی مذمت ","Day 6"),
-            SayingIndexModel(6," ٹخنوں سے نیچے تک لباس پہننے پر وعید  ","Day 7"),
-            SayingIndexModel(7,"کامل مسلمان کون ؟ ","Day 8"),
-            SayingIndexModel(8,"  نرمی ومہربانی ","Day 9"),
-            SayingIndexModel(9,"حقیقی پہلواں","Day 10"),
-            SayingIndexModel(10,"بے حیائی کے مذمت ","Day 11"),
+            SayingIndexModel(0, "اخلاص نیت ","Hadees 1"),
+            SayingIndexModel(1,"مسلمانوں کے چند حقوق","Hadees 2"),
+            SayingIndexModel(2,"رحمدلی ","Hadees 3"),
+            SayingIndexModel(3," چخلخوری ","Hadees 4"),
+            SayingIndexModel(4," قطح رحمی ","Hadees 5"),
+            SayingIndexModel(5,"ظلم کی مذمت ","Hadees 6"),
+            SayingIndexModel(6," ٹخنوں سے نیچے تک لباس پہننے پر وعید  ","Hadees 7"),
+            SayingIndexModel(7,"کامل مسلمان کون ؟ ","Hadees 8"),
+            SayingIndexModel(8,"  نرمی ومہربانی ","Hadees 9"),
+            SayingIndexModel(9,"حقیقی پہلواں","Hadees 10"),
+            SayingIndexModel(10,"بے حیائی کے مذمت ","Hadees 11"),
 
-            SayingIndexModel(11,"پا بندی اور مستقل مزاجی ","Day 12"),
-            SayingIndexModel(12,"تصویر اور کتے کی نحوست","Day 13"),
-            SayingIndexModel(13,"  نبی ﷺ کا محبوب ","Day 14"),
-            SayingIndexModel(14,"دنیا کی حیثیت","Day 15"),
+            SayingIndexModel(11,"پا بندی اور مستقل مزاجی ","Hadees 12"),
+            SayingIndexModel(12,"تصویر اور کتے کی نحوست","Hadees 13"),
+            SayingIndexModel(13,"  نبی ﷺ کا محبوب ","Hadees 14"),
+            SayingIndexModel(14,"دنیا کی حیثیت","Hadees 15"),
 
-            SayingIndexModel(15,"ناراضگی کی مذمت ","Day 16"),
-            SayingIndexModel(16,"  ہوشیاری اور بیدار مغزی ","Day 17"),
-            SayingIndexModel(17," حقیقی مالداری ","Day 18"),
-            SayingIndexModel(18,"دنیا میں رہنے کا طریقہ","Day 19"),
+            SayingIndexModel(15,"ناراضگی کی مذمت ","Hadees 16"),
+            SayingIndexModel(16,"  ہوشیاری اور بیدار مغزی ","Hadees 17"),
+            SayingIndexModel(17," حقیقی مالداری ","Hadees 18"),
+            SayingIndexModel(18,"دنیا میں رہنے کا طریقہ","Hadees 19"),
 
-            SayingIndexModel(19,"جھوٹے کی پہچان","Day 20"),
-            SayingIndexModel(20,"چچا کی عظمت","Day 21"),
-               SayingIndexModel(21,"جھوٹے کی ایک پہچان","Day 22"),
+            SayingIndexModel(19,"جھوٹے کی پہچان","Hadees 20"),
+            SayingIndexModel(20,"چچا کی عظمت","Hadees 21"),
+               SayingIndexModel(21,"جھوٹے کی ایک پہچان","Hadees 22"),
 
             )
 

@@ -44,8 +44,6 @@ class HadeesDetailFragment : Fragment() {
         loadVerticalSetup()
     }
 
-
-
     private fun loadVerticalSetup(){
         val traditionalRecycleViewAdapter = TraditionalRecycleViewAdapter(requireContext())
         binding.imagerRecycleView.apply {
