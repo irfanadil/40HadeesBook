@@ -57,7 +57,8 @@ class TraditionalRecycleViewAdapter (val context:Context) : RecyclerView.Adapter
         //viewHolder.imageHolder.scaleType = ImageView.ScaleType.FIT_XY
         val highLightName = StringPatternMatching.returnAllMatchingNameOfProphet(textGiven, context )
         val highLightQuote = StringPatternMatching.returnAllQuoteHighlighted(highLightName, context)
-        viewHolder.sayingTextView.text = highLightQuote
+        val highLightHadeesNumber = StringPatternMatching.returnHighLightHadeesNumber(highLightQuote, context)
+        viewHolder.sayingTextView.text = highLightHadeesNumber
     }
 
 
