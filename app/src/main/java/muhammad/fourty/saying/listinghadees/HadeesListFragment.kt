@@ -56,7 +56,7 @@ class HadeesListFragment : Fragment() , DuaClickAdapter {
             SayingIndexModel(3," چخلخوری ","Hadees 4"),
             SayingIndexModel(4," قطح رحمی ","Hadees 5"),
             SayingIndexModel(5,"ظلم کی مذمت ","Hadees 6"),
-            SayingIndexModel(6," ٹخنوں سے نیچے تک لباس پہننے پر وعید  ","Hadees 7"),
+            SayingIndexModel(6,"ٹخنوں سے نیچے تک لباس","Hadees 7"),
             SayingIndexModel(7,"کامل مسلمان کون ؟ ","Hadees 8"),
             SayingIndexModel(8,"  نرمی ومہربانی ","Hadees 9"),
             SayingIndexModel(9,"حقیقی پہلواں","Hadees 10"),
