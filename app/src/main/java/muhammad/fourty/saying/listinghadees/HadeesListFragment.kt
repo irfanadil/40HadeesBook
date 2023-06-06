@@ -74,7 +74,8 @@ class HadeesListFragment : Fragment() , DuaClickAdapter {
 
             SayingIndexModel(19,"جھوٹے کی پہچان","Hadees 20"),
             SayingIndexModel(20,"چچا کی عظمت","Hadees 21"),
-               SayingIndexModel(21,"جھوٹے کی ایک پہچان","Hadees 22"),
+               SayingIndexModel(21,"عیب کی پردہ پوشی","Hadees 22"),
+            SayingIndexModel(22,"کامیاب شخص","Hadees 23"),
 
             )
 
