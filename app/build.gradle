@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace 'muhammad.fourty.saying'
-    compileSdk 33
+    namespace 'muhammad.renowned.saying'
+    compileSdk 34
 
     defaultConfig {
-        applicationId "muhammad.fourty.saying"
+        applicationId "muhammad.renowned.saying"
         minSdk 24
-        targetSdk 33
-        versionCode 5
-        versionName "1.5"
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

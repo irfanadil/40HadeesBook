@@ -1,4 +1,4 @@
-package muhammad.fourty.saying.notificationsdua
+package muhammad.renowned.saying.notificationsdua
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.navigation.fragment.findNavController
-import muhammad.fourty.saying.R
-import muhammad.fourty.saying.util.StringPatternMatching
-import muhammad.fourty.saying.databinding.FragmentScrollDirectionBinding
+import muhammad.renowned.saying.util.StringPatternMatching
+import muhammad.renowned.saying.R
+import muhammad.renowned.saying.databinding.FragmentScrollDirectionBinding
 
 
 class SelectPageScrollDirectionFragment : Fragment() {

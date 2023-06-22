@@ -1,8 +1,9 @@
-package muhammad.fourty.saying
+package muhammad.renowned.saying
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import muhammad.fourty.saying.databinding.ActivityMainBinding
+import muhammad.renowned.saying.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 

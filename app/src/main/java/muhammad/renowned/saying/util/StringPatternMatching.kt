@@ -1,4 +1,4 @@
-package muhammad.fourty.saying.util
+package muhammad.renowned.saying.util
 
 import android.content.Context
 import android.content.res.Resources
@@ -8,7 +8,7 @@ import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.text.style.RelativeSizeSpan
 import android.text.style.StyleSpan
-import muhammad.fourty.saying.R
+import muhammad.renowned.saying.R
 
 
 object StringPatternMatching {

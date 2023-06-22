@@ -1,4 +1,4 @@
-package muhammad.fourty.saying
+package muhammad.renowned.saying
 
 import org.junit.Test
 

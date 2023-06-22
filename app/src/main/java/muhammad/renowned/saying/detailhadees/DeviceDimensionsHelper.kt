@@ -1,4 +1,4 @@
-package muhammad.fourty.saying.detailhadees
+package muhammad.renowned.saying.detailhadees
 
 import android.content.Context
 import android.content.res.Resources
