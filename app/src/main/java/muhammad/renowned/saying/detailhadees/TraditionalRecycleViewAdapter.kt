@@ -1,14 +1,13 @@
-package muhammad.fourty.saying.detailhadees
+package muhammad.renowned.saying.detailhadees
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.text.Spannable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import muhammad.fourty.saying.databinding.HadeesDetailHolderBinding
-import muhammad.fourty.saying.util.StringPatternMatching
+import muhammad.renowned.saying.util.StringPatternMatching
+import muhammad.renowned.saying.databinding.HadeesDetailHolderBinding
 
 
 class TraditionalRecycleViewAdapter (val context:Context) : RecyclerView.Adapter<TraditionalRecycleViewAdapter.ViewHolder>() {

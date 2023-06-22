@@ -1,4 +1,4 @@
-package muhammad.fourty.saying.listinghadees.adapter
+package muhammad.renowned.saying.listinghadees.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
-import muhammad.fourty.saying.databinding.ItemListContentBinding
-import muhammad.fourty.saying.listinghadees.model.SayingIndexModel
+import muhammad.renowned.saying.listinghadees.model.SayingIndexModel
+import muhammad.renowned.saying.databinding.ItemListContentBinding
 
 class IndexListAdapter
 internal constructor(

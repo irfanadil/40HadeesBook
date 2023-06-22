@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_dua_list"
-        android:name="muhammad.fourty.saying.listinghadees.HadeesListFragment"
+        android:name="muhammad.renowned.saying.listinghadees.HadeesListFragment"
         android:label="@string/day_dua_list_page"
         tools:layout="@layout/fragment_home" >
 
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/page_scroll_direction"
-        android:name="muhammad.fourty.saying.notificationsdua.SelectPageScrollDirectionFragment"
+        android:name="muhammad.renowned.saying.notificationsdua.SelectPageScrollDirectionFragment"
         android:label="@string/page_direction_screen"
         tools:layout="@layout/fragment_scroll_direction" >
 
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/dua_read_page"
-        android:name="muhammad.fourty.saying.detailhadees.HadeesDetailFragment"
+        android:name="muhammad.renowned.saying.detailhadees.HadeesDetailFragment"
         android:label="@string/dua_read_page"
         tools:layout="@layout/fragment_dashboard" >
         <action

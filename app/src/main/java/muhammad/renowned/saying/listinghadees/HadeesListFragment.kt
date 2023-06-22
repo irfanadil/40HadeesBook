@@ -1,4 +1,4 @@
-package muhammad.fourty.saying.listinghadees
+package muhammad.renowned.saying.listinghadees
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import muhammad.fourty.saying.R
-import muhammad.fourty.saying.databinding.FragmentHomeBinding
-import muhammad.fourty.saying.listinghadees.adapter.IndexListAdapter
-import muhammad.fourty.saying.listinghadees.adapter.DuaClickAdapter
-import muhammad.fourty.saying.listinghadees.model.SayingIndexModel
+import muhammad.renowned.saying.listinghadees.adapter.IndexListAdapter
+import muhammad.renowned.saying.listinghadees.adapter.DuaClickAdapter
+import muhammad.renowned.saying.listinghadees.model.SayingIndexModel
+import muhammad.renowned.saying.R
+import muhammad.renowned.saying.databinding.FragmentHomeBinding
 
 
 class HadeesListFragment : Fragment() , DuaClickAdapter {

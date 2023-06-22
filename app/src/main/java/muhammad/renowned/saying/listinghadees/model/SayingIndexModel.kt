@@ -1,4 +1,4 @@
-package muhammad.fourty.saying.listinghadees.model
+package muhammad.renowned.saying.listinghadees.model
 
 
 //@Entity(tableName = "quotesTable")

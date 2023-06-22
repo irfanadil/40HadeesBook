@@ -1,4 +1,4 @@
-package muhammad.fourty.saying.notificationsdua
+package muhammad.renowned.saying.notificationsdua
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

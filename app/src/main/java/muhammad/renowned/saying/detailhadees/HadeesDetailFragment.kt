@@ -1,4 +1,4 @@
-package muhammad.fourty.saying.detailhadees
+package muhammad.renowned.saying.detailhadees
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import muhammad.fourty.saying.databinding.FragmentDashboardBinding
-import muhammad.fourty.saying.util.Saying
+import muhammad.renowned.saying.util.Saying
+import muhammad.renowned.saying.databinding.FragmentDashboardBinding
 
 
 class HadeesDetailFragment : Fragment() {
